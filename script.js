@@ -86,3 +86,12 @@ boxBiBold.addEventListener("click", ()=>{
     editword.classList.toggle("negrito")
 })
 
+const boxBiitalic = document.querySelector(".box-bi-italic")
+
+boxBiitalic.addEventListener("click", ()=>{
+    editword.classList.toggle("italic")
+})
+
+
+
+
