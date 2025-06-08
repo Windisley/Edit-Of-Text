@@ -37,12 +37,17 @@
                         </div>
                     </div>
 
-                    <li>
+                    <div class="box-size">
                         <button>
-                            <i class="bi bi-textarea-t"></i>
+                            <p>&#45;</p>
+                        </button>
+                        <input type="number" name="size-text" id="size-text" min="0" max="99"
+                            oninput="this.value = this.value.slice(0, 2)">
+                        <button>
+                            <p>&#43;</p>
 
                         </button>
-                    </li>
+                    </div>
 
                     <li>
                         <button>
@@ -86,7 +91,7 @@
                 </ul>
             </section>
             <section class="box-text">
-                <div contenteditable="true"></div>
+                <div contenteditable="true" class="edit-word"></div>
             </section>
         </div>
     </div>
