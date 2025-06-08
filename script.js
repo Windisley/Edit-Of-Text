@@ -98,6 +98,14 @@ boxBiunderline.addEventListener("click", ()=>{
     editword.classList.toggle("underline")
 })
 
+const editColor = document.querySelector("#edit-color")
+
+editColor.addEventListener("input", (input)=>{
+    const valuecolor = input.target.value
+
+    editword.style.color = valuecolor
+})
+
 
 
 
