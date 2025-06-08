@@ -80,3 +80,9 @@ boxBiType.addEventListener("click", ()=>{
  
 })
 
+const boxBiBold = document.querySelector(".box-bi-bold")
+
+boxBiBold.addEventListener("click", ()=>{
+    editword.classList.toggle("negrito")
+})
+

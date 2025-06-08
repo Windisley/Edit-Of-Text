@@ -207,14 +207,14 @@ li{
     text-transform: uppercase;
 }
 
-/* .container .cont-edit-text .box-text .negrito{
+.container .cont-edit-text .box-text .negrito{
     width: 100%;
     min-height: 100dvh;
     padding: 1rem;
     outline: none;
     letter-spacing: .5px;
     font-weight: bold;
-} */
+}
 
 
 .container .cont-edit-text .box-text .edit-word-arial{
