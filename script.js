@@ -8,12 +8,18 @@ const optionsFonts = document.querySelector(".options-fonts")
 const fontArial = document.querySelector(".font-arial")
 const fontCourier = document.querySelector(".font-courier")
 const fontImpact = document.querySelector(".font-impact")
-
 // end
+
+// Input size
+    const inputSize = document.querySelector("#size-text")
+    const buttonless = document.querySelector(".buttonless") 
+    const buttonplus = document.querySelector(".buttonplus") 
+//end
 
 biFonts.addEventListener("click", ()=>{
     optionsFonts.classList.toggle("options-fonts-on")
 })
+
 
 fontArial.addEventListener("click", ()=>{
     editword.classList.toggle("edit-word-arial")
@@ -25,7 +31,7 @@ fontArial.addEventListener("click", ()=>{
 fontCourier.addEventListener("click", ()=>{
     editword.classList.toggle("edit-word-courier")
     editword.classList.remove("edit-word-arial")
-    editword.classList.remove("edit-word-arial")
+    editword.classList.remove("edit-word-impact")
 
 })
 
@@ -33,5 +39,33 @@ fontImpact.addEventListener("click", ()=>{
     editword.classList.remove("edit-word-courier")
     editword.classList.remove("edit-word-arial")
     editword.classList.toggle("edit-word-impact")
+
+})
+
+
+inputSize.addEventListener("input", (input)=>{
+    let valueinput = parseInt(input.target.value) 
+    editword.style.fontSize = valueinput + "px"
+    
+})
+
+buttonless.addEventListener("click", ()=>{
+    let currentValue = parseInt(inputSize.value)
+    
+    if(currentValue > 1){
+        inputSize.value -= 1
+        editword.style.fontSize = inputSize.value + "px";
+    }
+
+
+})
+
+buttonplus.addEventListener("click", ()=>{
+    let currentValue = parseInt(inputSize.value);
+    let sumValue = currentValue + 1;
+  
+    inputSize.value = sumValue;
+    editword.style.fontSize = sumValue + "px";
+
 
 })

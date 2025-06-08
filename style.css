@@ -195,7 +195,7 @@ li{
     min-height: 100dvh;
     padding: 1rem;
     outline: none;
-
+    letter-spacing: .5px;
 }
 
 .container .cont-edit-text .box-text .edit-word-arial{
