@@ -92,6 +92,14 @@ boxBiitalic.addEventListener("click", ()=>{
     editword.classList.toggle("italic")
 })
 
+const boxBiunderline = document.querySelector(".box-bi-underline")
+
+boxBiunderline.addEventListener("click", ()=>{
+    editword.classList.toggle("underline")
+})
+
+
+
 
 
 

@@ -210,6 +210,10 @@ li{
     font-style: italic;
 }
 
+.container .cont-edit-text .box-text .underline{
+    text-decoration: underline;
+}
+
 
 
 .container .cont-edit-text .box-text .edit-word-arial{
