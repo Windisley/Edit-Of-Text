@@ -69,3 +69,14 @@ buttonplus.addEventListener("click", ()=>{
 
 
 })
+
+// Button Type Text
+    const boxBiType = document.querySelector(".box-bi-type")
+
+// end
+
+boxBiType.addEventListener("click", ()=>{
+ editword.classList.toggle("uppercase")
+ 
+})
+

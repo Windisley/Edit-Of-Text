@@ -15,7 +15,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+   
     transition: all .3s ease-in-out;
 }
 
@@ -197,6 +197,25 @@ li{
     outline: none;
     letter-spacing: .5px;
 }
+
+.container .cont-edit-text .box-text .uppercase{
+    width: 100%;
+    min-height: 100dvh;
+    padding: 1rem;
+    outline: none;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+/* .container .cont-edit-text .box-text .negrito{
+    width: 100%;
+    min-height: 100dvh;
+    padding: 1rem;
+    outline: none;
+    letter-spacing: .5px;
+    font-weight: bold;
+} */
+
 
 .container .cont-edit-text .box-text .edit-word-arial{
     width: 100%;
