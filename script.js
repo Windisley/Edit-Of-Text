@@ -107,6 +107,34 @@ editColor.addEventListener("input", (input)=>{
 })
 
 
+// Get Buttons Of Position Left Or Right And Center
+    const left = document.querySelector(".left")
+    const right= document.querySelector(".right")
+    const center = document.querySelector(".center")
+
+    left.addEventListener("click", ()=>{
+        editword.classList.toggle("lefttext")
+        editword.classList.remove("righttext")
+        editword.classList.remove("centertext")
+
+    })
+
+    right.addEventListener("click", ()=>{
+        editword.classList.toggle("righttext")
+        editword.classList.remove("lefttext")
+        editword.classList.remove("centertext")
+
+    })
+    
+    center.addEventListener("click", ()=>{
+        editword.classList.toggle("centertext")
+        editword.classList.remove("righttext")
+        editword.classList.remove("lefttext")
+    })
+
+// End
+
+
 
 
 

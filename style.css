@@ -212,7 +212,20 @@ li{
 
 .container .cont-edit-text .box-text .underline{
     text-decoration: underline;
+    
 }
+
+.container .cont-edit-text .box-text .lefttext{
+text-align: left;    
+}
+
+.container .cont-edit-text .box-text .righttext{
+    text-align: right;    
+}
+
+.container .cont-edit-text .box-text .centertext{
+    text-align: center;    
+    }
 
 
 
