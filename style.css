@@ -22,6 +22,7 @@ body{
 button{
     cursor: pointer;
     background-color: var(--color-white);
+    height: 40px;
     border: 1px solid;
     border-radius: 2px;
     font-size: 1.2rem;
@@ -140,12 +141,11 @@ li{
 .container .cont-edit-text .tools-editor  .list-tools .box-fonts .options-fonts ul{
     width: 100%;
     max-width: 500px;
-    
 }
 
 .container .cont-edit-text .tools-editor  .list-tools .box-fonts .options-fonts ul li button{
-    width: 100%;
-    width: 200px;
+    width: 120px;
+    height: 100%;
     
 }
 
@@ -213,6 +213,12 @@ li{
 .container .cont-edit-text .box-text .underline{
     text-decoration: underline;
     
+}
+
+
+.container .cont-edit-text .box-position-text{
+    display: flex;
+    gap: .2rem;
 }
 
 .container .cont-edit-text .box-text .lefttext{

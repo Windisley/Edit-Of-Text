@@ -113,21 +113,21 @@ editColor.addEventListener("input", (input)=>{
     const center = document.querySelector(".center")
 
     left.addEventListener("click", ()=>{
-        editword.classList.toggle("lefttext")
+        editword.classList.add("lefttext")
         editword.classList.remove("righttext")
         editword.classList.remove("centertext")
 
     })
 
     right.addEventListener("click", ()=>{
-        editword.classList.toggle("righttext")
+        editword.classList.add("righttext")
         editword.classList.remove("lefttext")
         editword.classList.remove("centertext")
 
     })
     
     center.addEventListener("click", ()=>{
-        editword.classList.toggle("centertext")
+        editword.classList.add("centertext")
         editword.classList.remove("righttext")
         editword.classList.remove("lefttext")
     })
