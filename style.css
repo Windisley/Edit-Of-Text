@@ -198,6 +198,14 @@ li{
     letter-spacing: .5px;
 }
 
+
+    span {
+        letter-spacing: normal;
+        vertical-align: baseline;
+        line-height: 1;
+      }
+
+
 .container .cont-edit-text .box-text .uppercase{
     text-transform: uppercase;
 }

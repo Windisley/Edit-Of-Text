@@ -20,27 +20,29 @@ biFonts.addEventListener("click", ()=>{
     optionsFonts.classList.toggle("options-fonts-on")
 })
 
+function selectionText(classe){
+    const selection = window.getSelection()
 
-fontArial.addEventListener("click", ()=>{
-    editword.classList.toggle("edit-word-arial")
-    editword.classList.remove("edit-word-courier")
-    editword.classList.remove("edit-word-impact")
+    if(!selection.rangeCount || selection.isCollapsed) 
+    
+    return
 
-})
+    const range = selection.getRangeAt(0)
+    const selectedtext = selection.toString().trim()
+    
+    if (!selectedtext) return;
 
-fontCourier.addEventListener("click", ()=>{
-    editword.classList.toggle("edit-word-courier")
-    editword.classList.remove("edit-word-arial")
-    editword.classList.remove("edit-word-impact")
-
-})
-
-fontImpact.addEventListener("click", ()=>{
-    editword.classList.remove("edit-word-courier")
-    editword.classList.remove("edit-word-arial")
-    editword.classList.toggle("edit-word-impact")
-
-})
+    const span = document.createElement("span");
+    span.classList.add(classe);
+    span.textContent = selectedtext;
+  
+    range.deleteContents();
+  
+    range.insertNode(span);
+  
+    selection.removeAllRanges();
+    
+}
 
 
 inputSize.addEventListener("input", (input)=>{

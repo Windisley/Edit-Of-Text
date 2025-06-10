@@ -26,13 +26,13 @@
                         <div class="options-fonts">
                             <ul>
                                 <li class="font-arial">
-                                    <button>Arial</button>
+                                    <button onclick="selectionText('edit-word-arial')">Arial</button>
                                 </li>
                                 <li class="font-courier">
-                                    <button>Courier New</button>
+                                    <button onclick="selectionText('edit-word-courier')">Courier New</button>
                                 </li>
                                 <li class="font-impact">
-                                    <button>Impact</button>
+                                    <button onclick="selectionText('edit-word-impact')">Impact</button>
                                 </li>
                             </ul>
                         </div>
@@ -91,7 +91,9 @@
                 </ul>
             </section>
             <section class="box-text">
-                <div contenteditable="true" class="edit-word"></div>
+                <div  contenteditable="true" class="edit-word">
+                   
+                </div>
             </section>
         </div>
     </div>
