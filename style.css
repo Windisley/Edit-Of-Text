@@ -205,6 +205,11 @@ li{
         line-height: 1;
       }
 
+      .span-selected{
+        background-color: #8C8C8C;
+        padding: .1rem;
+      }
+
 
 .container .cont-edit-text .box-text .uppercase{
     text-transform: uppercase;
@@ -230,14 +235,17 @@ li{
 }
 
 .container .cont-edit-text .box-text .lefttext{
-text-align: left;    
+    
+    text-align: left;    
 }
 
 .container .cont-edit-text .box-text .righttext{
+
     text-align: right;    
 }
 
 .container .cont-edit-text .box-text .centertext{
+    
     text-align: center;    
     }
 

@@ -51,38 +51,38 @@
                     </div>
 
                     <li>
-                        <button class="box-bi-type">
+                        <button class="box-bi-type" onclick="selectionText('uppercase')">
                             <i class="bi bi-type"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="box-bi-bold">
+                        <button class="box-bi-bold" onclick="selectionText('negrito')">
                             <i class="bi bi-type-bold"></i>
 
                         </button>
                     </li>
                     <li>
-                        <button class="box-bi-italic">
+                        <button class="box-bi-italic" onclick="selectionText('italic')">
                             <i class="bi bi-type-italic"></i>
 
                         </button>
                     </li>
                     <li>
-                        <button class="box-bi-underline">
+                        <button class="box-bi-underline" onclick="selectionText('underline')">
                             <i class="bi bi-type-underline"></i>
 
                         </button>
                     </li>
-                    <input type="color" name="edit-color" id="edit-color">
+                    <input type="color" name="edit-color" id="edit-color" oninput="selectionColorStyle(this)">
                     <li class="box-position-text">
 
-                        <button class="left">
+                        <button class="left" onclick="selectionText('lefttext')">
                             <i class="bi bi-text-left"></i>
                         </button>
-                        <button class="center">
+                        <button class="center" onclick="selectionText('centertext')">
                             <i class="bi bi-text-center"></i>
                         </button>
-                        <button class="right">
+                        <button class="right" onclick="selectionText('righttext')">
                             <i class="bi bi-text-right"></i>
                         </button>
 
