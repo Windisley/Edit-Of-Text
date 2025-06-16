@@ -179,6 +179,23 @@ li{
     justify-content: center;
 }
 
+.box-size select{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+
+}
+
+.box-size select option{
+    background-color: var(--color-gray-black);
+    color: var(--color-white);
+    
+}
+
 
 
 .container .cont-edit-text .box-text{
