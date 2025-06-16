@@ -18,7 +18,7 @@
                 <ul class="list-tools">
                     <div class="box-fonts">
                         <li class="fonts">
-                            <button class="box-bi-fonts">
+                            <button class="box-bi-fonts" onclick="selectionText('options-fonts-on')">
                                 <i class="bi bi-fonts"></i>
                             </button>
                         </li>
@@ -38,16 +38,19 @@
                         </div>
                     </div>
 
-                    <div class="box-size">
-                        <button class="buttonless">
-                            <p>&#45;</p>
-                        </button>
-                        <input type="number" name="size-text" id="size-text" min="0" max="99"
-                            oninput="this.value = this.value.slice(0, 2)" value="14">
-                        <button class="buttonplus">
-                            <p>&#43;</p>
-
-                        </button>
+                    <div class="box-size">     
+                        <select onchange="selectionFontSize(this)">
+                            <option value="8px">8px</option>
+                            <option value="10px">10px</option>
+                            <option value="12px">12px</option>
+                            <option value="14px">14px</option>
+                            <option value="18px">18px</option>
+                            <option value="24px">24px</option>
+                            <option value="32px">32px</option>
+                            <option value="48px">48px</option>
+                            <option value="60px">60px</option>
+                            <option value="72px">72px</option>
+                        </select>    
                     </div>
 
                     <li>

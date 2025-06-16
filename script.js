@@ -2,6 +2,19 @@ const editword = document.querySelector(".edit-word")
 
 const biFonts = document.querySelector(".box-bi-fonts")
 
+const optionsFonts = document.querySelector(".options-fonts")
+
+// Buttons Para Mudar A fonte
+const fontArial = document.querySelector(".font-arial")
+const fontCourier = document.querySelector(".font-courier")
+const fontImpact = document.querySelector(".font-impact")
+// end
+
+// Input size
+    const inputSize = document.querySelector("#size-text")
+    const buttonless = document.querySelector(".buttonless") 
+    const buttonplus = document.querySelector(".buttonplus") 
+//end
 
 biFonts.addEventListener("click", ()=>{
     optionsFonts.classList.toggle("options-fonts-on")
@@ -62,6 +75,28 @@ function selectionColorStyle(input) {
   
     selection.removeAllRanges();
   }
+
+  function selectionFontSize(select) {
+    const selection = window.getSelection();
+  
+    if (!selection.rangeCount || selection.isCollapsed) return;
+  
+    const range = selection.getRangeAt(0);
+    const selectedText = selection.toString().trim();
+    const sizeValue = select.value;
+  
+    if (!selectedText) return;
+  
+    const span = document.createElement("span");
+    span.style.fontSize = sizeValue;
+    span.textContent = selectedText;
+  
+    range.deleteContents();
+    range.insertNode(span);
+  
+    selection.removeAllRanges();
+  }
+
 
 
 // Get Buttons Of Position Left Or Right And Center
